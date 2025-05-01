@@ -1,15 +1,10 @@
 ## 📘 JavaScript Cheatsheet
 
 ```javascript
-// let
 // Declares a block-scoped variable that can be reassigned.
 let count = 1;
-count = 2;
-
-// const
 // Declares a block-scoped constant that cannot be reassigned.
 const PI = 3.14;
-
 // array
 // A data structure used to store multiple values in a single variable, indexed by position.
 const colors = ["red", "green", "blue"];
