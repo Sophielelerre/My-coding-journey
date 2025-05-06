@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Bugged</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Fly</h1>
+    <h2>Your eyes and ears everywhere</h2>
+    <p id="description">A little about you</p>
+    <!-- <form method="post" action='https://register-demo.freecodecamp.org'> -->
+    <form>
+      <fieldset>
+        <label for="name">Enter Your Name: <input id="name" name="name" type="text" required /></label>
+        <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+        <label for="age">Enter Your Age: <input id="age" name="age" type="number" required min=13 max=100/></label>
+      </fieldset>
+      <fieldset>
+        <legend>Account type (required)</legend>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" checked /> Personal</label>
+        <label for="engineering"><input id="engineering" type="radio" name="account-type" class="inline" /> Engineering</label>
+      </fieldset>
+      <fieldset>
+            <legend>What service are you looking for or wanting to provide?</legend>
+            <input id="quick" type="checkbox" name="visit" value="quick" checked> <label for="quick">quick picture of a street/place</label>
+            <input id="address" type="checkbox" name="visit" value="address"> <label for="address">30min visit of an address</label>
+            <input id="eng" type="checkbox" name="visit" value="eng"> <label for="eng">1h engineering site visit</label>
+          </fieldset>
+      <fieldset>
+        <label for="dropdown">How urgent?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">now</option>
+            <option value="2">today</option>
+            <option value="3">this week </option>
+            <option value="4">this month</option>
+          </select>
+        </label>
+        <label for="bio">Any particular requests?
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Address (e.g. noise, neighbours or bins) Engineering (e.g. rust, lekage or concrete spalling)""></textarea>
+        </label>
+      </fieldset>
+      <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+      </label>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
+
+CSS
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #afafce;
+  color: #f5f6f7;
+  font-family: Monospace;
+  font-size: 16px;
+}
+
+h1,h2, p {
+  margin: 1em auto;
+  text-align: center;
+}
+form {
+  width: 80vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+fieldset {
+  margin-top:1rem;
+  padding: 1rem;
+  padding-top:1em;
+}
+input, textarea {
+  background-color: #d1d1f3;
+  border: 1px solid #afafce;
+  color: #be9090;
+}
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: top;
+}
+input[type="submit"] {
+  display: block;
+  width: 40%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #8282b4;
+  border-color: white;
+  min-width: 100px;
+  color:white;
+}
